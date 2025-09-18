@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Free Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <h1 class="brand">Your Free Shop</h1>
+      <nav>
+        <a href="#" id="link-home">Home</a>
+        <a href="#" id="link-shop">Shop</a>
+        <a href="#" id="link-cart">Cart (<span id="cart-count">0</span>)</a>
+        <a href="admin.html" class="admin-link">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="app">
+    <!-- Home -->
+    <section id="home" class="page">
+      <div class="hero">
+        <h2>Welcome — Shop free & fast</h2>
+        <p>Add your products from Admin → export products.json to make changes permanent.</p>
+      </div>
+      <div id="featured" class="grid"></div>
+    </section>
+
+    <!-- Shop -->
+    <section id="shop" class="page hidden">
+      <h2>Shop</h2>
+      <div id="product-grid" class="grid"></div>
+    </section>
+
+    <!-- Cart -->
+    <section id="cart" class="page hidden">
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <div class="cart-footer">
+        <div>Total: <strong id="cart-total">0.00</strong> <span id="currency">USD</span></div>
+        <button id="checkout-btn" class="btn primary">Checkout with PayPal</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>Made with ❤️ — Free static shop. Host on GitHub Pages or Netlify.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
